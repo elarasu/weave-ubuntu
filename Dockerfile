@@ -13,7 +13,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # Core updates
 RUN  apt-get update \
-  && apt-get install -yq wget curl unzip sysstat lsof strace tcpdump dnsutils --no-install-recommends \
+  && apt-get install -yq wget curl nano unzip sysstat lsof strace tcpdump dnsutils --no-install-recommends \
   && sed -i '/ENABLED/ s/false/true/' /etc/default/sysstat \
   && apt-get autoremove -y \
   && apt-get autoclean -y \

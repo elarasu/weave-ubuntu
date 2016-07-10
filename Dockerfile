@@ -1,7 +1,7 @@
 # Ubuntu Base image description
 #   docker build -t elarasu/weave-ubuntu .
 #
-FROM ubuntu:15.04
+FROM ubuntu:14.04
 MAINTAINER elarasu@outlook.com
 
 # Set locale
